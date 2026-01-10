@@ -1,0 +1,22 @@
+---
+paths:
+
+# order
+  /order:
+    $ref: "./paths/order/post.yml"
+  /order/{orderId}:
+    allOf:
+      - $ref: "./paths/order/get.yml"
+      - $ref: "./paths/order/patch.yml"
+      - $ref: "./paths/order/delete.yml"
+
+  # user
+  /user:
+    $ref: "./paths/user/post.yml"
+  /user/{userId}:
+    allOf:
+      - $ref: "./paths/user/get.yml"
+      - $ref: "./paths/user/delete.yml"
+
+
+  

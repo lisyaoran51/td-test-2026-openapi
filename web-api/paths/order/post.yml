@@ -1,0 +1,19 @@
+---
+post:
+  operationId: /order:post
+  description: 新增卡片
+  tags:
+    - order
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: "../../schemas.yml#/schemas/orderPostRequest"
+  responses:
+    '200':
+      description: OK
+      content:
+        application/json:
+          schema:
+            $ref: "../../schemas.yml#/schemas/orderPostResponse"

@@ -1,0 +1,60 @@
+---
+schemas:
+# common
+  id:
+    "$ref": '../common/schemas.yml#/schemas/id'
+  result:
+    "$ref": '../common/schemas.yml#/schemas/result'
+  phoneNumber:
+    $ref: ../common/schemas.yml#/schemas/phoneNumber
+  page:
+    $ref: ../common/schemas.yml#/schemas/page
+  
+# order
+  order:
+    "$ref": './schemas/order.yml#/order'
+  orderQuery:
+    "$ref": './schemas/orderQuery.yml#/orderQuery'
+  orderPostRequest:
+    $ref: ./schemas/order/orderPostRequest.yml#/orderPostRequest
+  orderPostResponse:
+    $ref: ./schemas/order/orderPostResponse.yml#/orderPostResponse
+  orderGetRequest:
+    $ref: ./schemas/order/orderGetRequest.yml#/orderGetRequest
+  orderGetResponse:
+    $ref: ./schemas/order/orderGetResponse.yml#/orderGetResponse
+  orderPatchRequest:
+    $ref: ./schemas/order/orderPatchRequest.yml#/orderPatchRequest
+  orderPatchResponse:
+    $ref: ./schemas/order/orderPatchResponse.yml#/orderPatchResponse
+  orderDeleteRequest:
+    $ref: ./schemas/order/orderDeleteRequest.yml#/orderDeleteRequest
+  orderDeleteResponse:
+    $ref: ./schemas/order/orderDeleteResponse.yml#/orderDeleteResponse
+
+  product:
+    $ref: ./schemas/product.yml#/product
+  productQuery:
+    $ref: ./schemas/productQuery.yml#/productQuery
+
+  productCategory:
+    $ref: ./schemas/productCategory.yml#/productCategory
+  productCategoryQuery:
+    $ref: ./schemas/productCategoryQuery.yml#/productCategoryQuery
+
+  user:
+    $ref: ./schemas/user.yml#/user
+  userQuery:
+    $ref: ./schemas/userQuery.yml#/userQuery
+  userPostRequest:
+    $ref: ./schemas/user/userPostRequest.yml#/userPostRequest
+  userPostResponse:
+    $ref: ./schemas/user/userPostResponse.yml#/userPostResponse
+  userGetRequest:
+    $ref: ./schemas/user/userGetRequest.yml#/userGetRequest
+  userGetResponse:
+    $ref: ./schemas/user/userGetResponse.yml#/userGetResponse
+  userDeleteRequest:
+    $ref: ./schemas/user/userDeleteRequest.yml#/userDeleteRequest
+  userDeleteResponse:
+    $ref: ./schemas/user/userDeleteResponse.yml#/userDeleteResponse

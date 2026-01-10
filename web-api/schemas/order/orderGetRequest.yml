@@ -1,0 +1,3 @@
+---
+orderGetRequest:
+  "$ref": "../../schemas.yml#/schemas/orderQuery"

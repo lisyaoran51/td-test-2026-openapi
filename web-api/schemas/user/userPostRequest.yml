@@ -1,0 +1,3 @@
+---
+userPostRequest:
+  "$ref": "../../schemas.yml#/schemas/user"

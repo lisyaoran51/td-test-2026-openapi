@@ -1,0 +1,27 @@
+---
+delete:
+  operationId: /order/{orderId}:delete
+  description: 刪除卡片
+  tags:
+    - order
+  parameters:
+    - in: path
+      name: orderId
+      schema:
+        type: integer
+      required: true
+      description: Numeric ID of the order to delete
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: "../../schemas.yml#/schemas/orderDeleteRequest"
+  responses:
+    '200':
+      description: OK
+      content:
+        application/json:
+          schema:
+            $ref: "../../schemas.yml#/schemas/orderDeleteResponse"
+

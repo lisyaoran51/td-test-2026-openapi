@@ -1,0 +1,19 @@
+---
+orderGetResponse:
+  allOf:
+    - $ref: "../../schemas.yml#/schemas/result"
+    - type: object
+      properties:
+        data:
+          allOf:
+            - "$ref": "../../schemas.yml#/schemas/order"
+            - type: object
+              properties:
+                createdAt:
+                  type: Filtered
+                  description: data filtered
+                updatedAt:
+                  type: Filtered
+                  description: data filtered
+    
+    

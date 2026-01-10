@@ -1,0 +1,3 @@
+---
+orderPostRequest:
+  "$ref": "../../schemas.yml#/schemas/order"

@@ -1,0 +1,3 @@
+---
+orderPatchRequest:
+  "$ref": "../../schemas.yml#/schemas/order"

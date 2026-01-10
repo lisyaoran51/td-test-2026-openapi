@@ -1,0 +1,26 @@
+---
+get:
+  operationId: /order/{orderId}:get
+  description: 取得卡片
+  tags:
+    - order
+  parameters:
+    - in: path
+      name: orderId
+      schema:
+        type: integer
+      required: true
+      description: Numeric ID of the order to get
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: "../../schemas.yml#/schemas/orderGetRequest"
+  responses:
+    '200':
+      description: OK
+      content:
+        application/json:
+          schema:
+            $ref: "../../schemas.yml#/schemas/orderGetResponse"
