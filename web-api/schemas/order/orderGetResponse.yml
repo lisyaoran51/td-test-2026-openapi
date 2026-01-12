@@ -11,9 +11,7 @@ orderGetResponse:
               properties:
                 createdAt:
                   type: Filtered
-                  description: data filtered
                 updatedAt:
                   type: Filtered
-                  description: data filtered
     
     

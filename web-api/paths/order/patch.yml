@@ -1,27 +1,26 @@
 ---
-patch:
-  operationId: /order/{orderId}:patch
-  description: 更新卡片
-  tags:
-    - order
-  parameters:
-    - in: path
-      name: orderId
-      schema:
-        type: integer
-      required: true
-      description: Numeric ID of the order to update
-  requestBody:
+operationId: /order/{orderId}:patch
+description: 更新卡片
+tags:
+  - order
+parameters:
+  - in: path
+    name: orderId
+    schema:
+      type: integer
     required: true
+    description: Numeric ID of the order to update
+requestBody:
+  required: true
+  content:
+    application/json:
+      schema:
+        $ref: "../../schemas.yml#/schemas/orderPatchRequest"
+responses:
+  '200':
+    description: OK
     content:
       application/json:
         schema:
-          $ref: "../../schemas.yml#/schemas/orderPatchRequest"
-  responses:
-    '200':
-      description: OK
-      content:
-        application/json:
-          schema:
-            $ref: "../../schemas.yml#/schemas/orderPatchResponse"
+          $ref: "../../schemas.yml#/schemas/orderPatchResponse"
 

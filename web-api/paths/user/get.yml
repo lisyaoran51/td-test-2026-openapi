@@ -1,26 +1,25 @@
 ---
-get:
-  operationId: /user/{userId}:get
-  description: 取得卡片
-  tags:
-    - user
-  parameters:
-    - in: path
-      name: userId
-      schema:
-        type: integer
-      required: true
-      description: Numeric ID of the user to get
-  requestBody:
+operationId: /user/{userId}:get
+description: 取得卡片
+tags:
+  - user
+parameters:
+  - in: path
+    name: userId
+    schema:
+      type: integer
     required: true
+    description: Numeric ID of the user to get
+requestBody:
+  required: true
+  content:
+    application/json:
+      schema:
+        $ref: "../../schemas.yml#/schemas/userGetRequest"
+responses:
+  '200':
+    description: OK
     content:
       application/json:
         schema:
-          $ref: "../../schemas.yml#/schemas/userGetRequest"
-  responses:
-    '200':
-      description: OK
-      content:
-        application/json:
-          schema:
-            $ref: "../../schemas.yml#/schemas/userGetResponse"
+          $ref: "../../schemas.yml#/schemas/userGetResponse"
