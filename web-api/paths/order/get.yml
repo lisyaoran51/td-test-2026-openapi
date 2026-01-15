@@ -8,6 +8,7 @@ parameters:
     name: orderId
     schema:
       type: integer
+      format: int64
     required: true
     description: Numeric ID of the order to get
 responses:
