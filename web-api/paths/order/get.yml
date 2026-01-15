@@ -10,12 +10,6 @@ parameters:
       type: integer
     required: true
     description: Numeric ID of the order to get
-requestBody:
-  required: true
-  content:
-    application/json:
-      schema:
-        $ref: "../../schemas.yml#/schemas/orderGetRequest"
 responses:
   '200':
     description: OK
