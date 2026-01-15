@@ -1,6 +1,7 @@
 ---
 order:
   type: object
+  x-class-extra-annotation: "@com.baomidou.mybatisplus.annotation.TableName(\"`order`\")"
   properties:
     id:
       type: integer

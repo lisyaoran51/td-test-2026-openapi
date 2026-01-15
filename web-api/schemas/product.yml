@@ -1,6 +1,7 @@
 ---
 product:
   type: object
+  x-class-extra-annotation: "@com.baomidou.mybatisplus.annotation.TableName(\"`product`\")"
   properties:
     id:
       type: integer

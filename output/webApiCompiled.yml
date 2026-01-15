@@ -207,6 +207,7 @@ components:
           format: int64
     order:
       type: object
+      x-class-extra-annotation: '@com.baomidou.mybatisplus.annotation.TableName("`order`")'
       properties:
         id:
           type: integer
@@ -288,6 +289,7 @@ components:
       type: object
     product:
       type: object
+      x-class-extra-annotation: '@com.baomidou.mybatisplus.annotation.TableName("`product`")'
       properties:
         id:
           type: integer
@@ -323,6 +325,7 @@ components:
               format: date-time
     productCategory:
       type: object
+      x-class-extra-annotation: '@com.baomidou.mybatisplus.annotation.TableName("`product_category`")'
       properties:
         id:
           type: integer
@@ -357,6 +360,7 @@ components:
               format: date-time
     user:
       type: object
+      x-class-extra-annotation: '@com.baomidou.mybatisplus.annotation.TableName("`user`")'
       properties:
         id:
           type: integer
