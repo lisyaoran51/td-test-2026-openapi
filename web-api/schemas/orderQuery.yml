@@ -4,6 +4,11 @@ orderQuery:
     - "$ref": "../schemas.yml#/schemas/order"
     - type: object
       properties:
+        userIdIn:
+          type: array
+          items:
+            type: integer
+            format: int64
         createdAtFrom:
           type: string
           format: date-time
