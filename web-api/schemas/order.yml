@@ -12,7 +12,7 @@ order:
       format: int64
     productId:
       type: integer
-      format: int32
+      format: int64
     orderAmount:
       type: integer
       format: int32
