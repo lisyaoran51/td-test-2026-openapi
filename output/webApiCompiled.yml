@@ -407,6 +407,14 @@ components:
                 - $ref: '#/components/schemas/user'
                 - type: object
                   properties:
+                    orders:
+                      type: array
+                      items:
+                        id:
+                          type: integer
+                          format: int64
+                        totalCost:
+                          type: number
                     createdAt:
                       type: Filtered
                       description: data filtered
