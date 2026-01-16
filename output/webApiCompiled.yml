@@ -410,11 +410,13 @@ components:
                     orders:
                       type: array
                       items:
-                        id:
-                          type: integer
-                          format: int64
-                        totalCost:
-                          type: number
+                        type: object
+                        properties:
+                          id:
+                            type: integer
+                            format: int64
+                          totalCost:
+                            type: number
                     createdAt:
                       type: Filtered
                       description: data filtered
